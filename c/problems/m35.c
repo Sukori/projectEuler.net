@@ -6,7 +6,7 @@ static unsigned int	series3(int max)
 	int				looper;
 	unsigned int	result;
 
-	if (!max)
+	if (!max || max <= 3)
 		return (0);
 	m3 = 2;
 	looper = 3 * m3;
@@ -31,7 +31,7 @@ static unsigned int	series5(int max)
 	int				looper;
 	unsigned int	result;
 
-	if (!max)
+	if (!max || max <= 5)
 		return (0);
 	m5 = 2;
 	looper = 5 * m5;
@@ -54,5 +54,5 @@ void	m35(int max)
 	m3 = series3(max);
 	m5 = series5(max);
 	result = m3 + m5;
-	printf("The sum of all the multiples of 3 and 5 below %d is %d\n", max, result);
+	ft_printf("The sum of all the multiples of 3 and 5 below %d is %d\n", max, result);
 }

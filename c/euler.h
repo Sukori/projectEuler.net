@@ -1,9 +1,13 @@
 #ifndef EULER_H
 # define EULER_H
 
-# include <unistd.h>
+# include "libft/header/libft.h"
 # include <stdio.h>
-# include <stdlib.h>
+# include <readline/readline.h>
+
+void	run_problem(char *usr_input);
+
+// Problems
 
 void	m35(int max);
 
